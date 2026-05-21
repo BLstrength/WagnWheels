@@ -3,7 +3,7 @@ import { useState } from 'react'
 const emptyForm = { name: '', address: '', contact: '', breed: '', size: '', description: '' }
 
 const EMAILJS_SERVICE_ID  = 'service_je2x0if'
-const EMAILJS_TEMPLATE_ID = 'WagnWheels'
+const EMAILJS_TEMPLATE_ID = 'template_p6jh1gs'
 const EMAILJS_PUBLIC_KEY  = 'EKfpgTI13qg9fLcl8'
 
 async function sendEmail(form) {
