@@ -16,22 +16,16 @@ export default function About() {
             <div className="about-text">
               <h2>Our Story</h2>
               <p>
-                Wag N Wheels was born out of a love for animals and a desire to
-                make pet grooming a truly stress-free experience. We know how
-                much your furry family members mean to you — that's why we treat
-                every dog and cat that hops into our tub with the same love and
-                care we'd give our own.
+                At Wag N Wheels, everything we do is rooted in a genuine love for animals and a mission to make grooming as stress-free and convenient as possible. As a pet owner myself, I understand the challenges. Dogs that get overly excited for car rides, pets that feel anxious in transit, or cats who protest the entire journey. That is exactly why Wag N Wheels was created: to bring a calm, professional grooming experience directly to your doorstep.
               </p>
               <p>
-                Our fully-equipped mobile grooming van brings everything needed
-                to pamper your pet: premium shampoos, conditioners, professional
-                tools, and a calm, private environment — all right outside your
-                front door.
+                Our fully equipped mobile grooming van has everything needed to care for your pet, including premium shampoos, conditioners, and professional tools. More importantly, every appointment is conducted one-on-one in a quiet, private environment. This means no crowded salons, no waiting, and no exposure to other animals. Just focused, personalized care.
               </p>
               <p>
-                Whether you have a tiny Chihuahua, a fluffy Maine Coon, or a
-                large Golden Retriever, we have the experience and the tools to
-                give them the perfect groom every single time.
+                Whether your pet gets car sick, sheds all over your vehicle, or simply feels stressed leaving home, we eliminate that burden by bringing the grooming salon to you. From small breeds like Chihuahuas to large dogs like Golden Retrievers, and even cats like Maine Coons, every pet is treated with the same level of patience, attention, and care we give our own.
+              </p>
+              <p>
+                At Wag N Wheels, your pet is not just another appointment—they are family.
               </p>
             </div>
 
