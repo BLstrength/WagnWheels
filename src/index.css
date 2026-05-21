@@ -303,7 +303,7 @@ img { max-width: 100%; height: auto; }
 .step {
   text-align: center;
   aspect-ratio: 3 / 4;
-  padding: 41% 18% 8%;
+  padding: 58% 18% 4%;
   background: rgba(0, 0, 0, 0.22);
   clip-path: url(#paw-clip);
   box-sizing: border-box;

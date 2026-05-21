@@ -54,11 +54,11 @@ export default function Home() {
       <svg style={{position:'absolute',width:0,height:0}} aria-hidden="true">
         <defs>
           <clipPath id="paw-clip" clipPathUnits="objectBoundingBox">
-            <ellipse cx="0.5"  cy="0.65" rx="0.44" ry="0.34"/>
-            <ellipse cx="0.16" cy="0.22" rx="0.13" ry="0.11"/>
-            <ellipse cx="0.36" cy="0.13" rx="0.12" ry="0.10"/>
-            <ellipse cx="0.64" cy="0.13" rx="0.12" ry="0.10"/>
-            <ellipse cx="0.84" cy="0.22" rx="0.13" ry="0.11"/>
+            <path d="M 0.26,0.42 C 0.35,0.36 0.44,0.40 0.50,0.44 C 0.56,0.40 0.65,0.36 0.74,0.42 C 0.84,0.47 0.88,0.58 0.86,0.68 C 0.84,0.79 0.75,0.88 0.64,0.92 C 0.58,0.94 0.54,0.96 0.50,0.96 C 0.46,0.96 0.42,0.94 0.36,0.92 C 0.25,0.88 0.16,0.79 0.14,0.68 C 0.12,0.58 0.16,0.47 0.26,0.42 Z"/>
+            <ellipse cx="0.175" cy="0.31"  rx="0.095" ry="0.125"/>
+            <ellipse cx="0.38"  cy="0.17"  rx="0.09"  ry="0.125"/>
+            <ellipse cx="0.62"  cy="0.17"  rx="0.09"  ry="0.125"/>
+            <ellipse cx="0.825" cy="0.31"  rx="0.095" ry="0.125"/>
           </clipPath>
         </defs>
       </svg>
