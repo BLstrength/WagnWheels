@@ -87,6 +87,8 @@ export default function ContactForm() {
               />
             </div>
 
+            <p className="form-required-note">* All fields are required</p>
+
             <button type="submit" className="btn btn-gold form-submit">
               Send Appointment Request 🐾
             </button>
