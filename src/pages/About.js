@@ -31,24 +31,20 @@ export default function About() {
 
             <div className="about-values">
               <div className="value-card">
-                <span className="value-icon">💛</span>
                 <h3>We Love Animals</h3>
-                <p>Every pet that steps into our van gets treated like royalty — because they deserve it.</p>
+                <p>Every pet that steps into our van gets treated like royalty, because they deserve it.</p>
               </div>
               <div className="value-card">
-                <span className="value-icon">🛡️</span>
                 <h3>Safety First</h3>
-                <p>We use only pet-safe, high-quality products — gentle on skin and coats for all breeds.</p>
+                <p>We use only pet-safe, high-quality products that are gentle on skin and coats for all breeds.</p>
               </div>
               <div className="value-card">
-                <span className="value-icon">🌟</span>
                 <h3>Experienced Groomers</h3>
                 <p>Professionally trained and experienced with dogs and cats of all breeds and sizes.</p>
               </div>
               <div className="value-card">
-                <span className="value-icon">🏡</span>
                 <h3>Your Schedule, Your Home</h3>
-                <p>We work around your routine and come directly to you — no drop-offs, no pickups.</p>
+                <p>We work around your routine and come directly to you, no drop-offs, no pickups.</p>
               </div>
             </div>
           </div>
