@@ -41,8 +41,8 @@ export default function Services() {
 
           <div className="services-featured-row">
             <div className="service-card service-card--featured">
-              <h3>Full Groom</h3>
-              <p>Our signature service — bath, blow dry, breed-specific haircut or style, nail trim, ear cleaning, and finishing touches.</p>
+              <h3>Full Service Groom</h3>
+              <p>The Full Service Groom includes a bath, conditioner, blow dry, brushing, deshedding, haircut, nail trimming, and ear cleaning, giving your dog a complete spa‑style grooming experience from start to finish.</p>
             </div>
           </div>
 
