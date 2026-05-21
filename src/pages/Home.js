@@ -9,7 +9,8 @@ export default function Home() {
         <div className="hero-content">
           <h1>Premium Mobile Pet Grooming</h1>
           <p className="hero-sub">
-            Your pet's personal pit crew, delivered to your door
+            Professional grooming for dogs &amp; cats — right at your door.
+            No kennel stress, no travel anxiety.
           </p>
           <div className="hero-btns">
             <Link to="/contact" className="btn btn-gold">Book Now</Link>
