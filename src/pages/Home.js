@@ -18,9 +18,8 @@ export default function Home() {
             <Link to="/services" className="btn btn-outline">Our Services</Link>
           </div>
         </div>
+        <PhotoCarousel />
       </section>
-
-      <PhotoCarousel />
 
       {/* Why Choose Us */}
       <section className="features">

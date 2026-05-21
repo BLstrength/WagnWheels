@@ -176,12 +176,14 @@ img { max-width: 100%; height: auto; }
   background: linear-gradient(135deg, #7A2810 0%, #C85A2E 45%, #E8B84B 100%);
   min-height: calc(100vh - 110px);
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
   padding: 80px 24px 60px;
   position: relative;
   overflow: hidden;
+  gap: 48px;
 }
 
 .hero-content {
@@ -701,28 +703,15 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ── Photo Carousel ── */
-.carousel-section {
-  padding: 90px 0;
-  background: var(--orange);
-}
-
-.carousel-section .section-title {
-  color: var(--white);
-}
-
-.carousel-section .section-sub {
-  color: rgba(255, 255, 255, 0.85);
-}
-
 .carousel-track {
   position: relative;
+  width: 100%;
   max-width: 900px;
-  margin: 0 auto;
   border-radius: 24px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
   background: #1a1a1a;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-slide {
