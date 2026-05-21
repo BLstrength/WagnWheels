@@ -19,7 +19,7 @@ const addOns = [
   {
     name: 'Skunk Treatment',
     description:
-      'Our skunk treatment is a gentle, specialized de-skunking treatment to effectively remove odor and restore your pet's freshness.',
+      "Our skunk treatment is a gentle, specialized de-skunking treatment to effectively remove odor and restore your pet's freshness.",
   },
 ]
 
