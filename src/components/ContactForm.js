@@ -2,9 +2,9 @@ import { useState } from 'react'
 
 const emptyForm = { name: '', address: '', contact: '', breed: '', size: '', description: '' }
 
-const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
-const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-const EMAILJS_PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+const EMAILJS_SERVICE_ID  = 'service_je2x0if'
+const EMAILJS_TEMPLATE_ID = 'WagnWheels'
+const EMAILJS_PUBLIC_KEY  = 'EKfpgTI13qg9fLcl8'
 
 async function sendEmail(form) {
   const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
