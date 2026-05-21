@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 
 const IMAGES = [
   '/gallery/IMG_7597.jpeg',
@@ -9,14 +9,37 @@ const IMAGES = [
 
 export default function PhotoCarousel() {
   const [current, setCurrent] = useState(0)
+  const [exiting, setExiting] = useState(null)
   const [paused, setPaused] = useState(false)
+  const exitTimer = useRef(null)
+
+  const goTo = useCallback((nextIndex) => {
+    setCurrent(prev => {
+      setExiting(prev)
+      clearTimeout(exitTimer.current)
+      exitTimer.current = setTimeout(() => setExiting(null), 700)
+      return nextIndex
+    })
+  }, [])
 
   const next = useCallback(() => {
-    setCurrent(i => (i + 1) % IMAGES.length)
+    setCurrent(prev => {
+      const nextIndex = (prev + 1) % IMAGES.length
+      setExiting(prev)
+      clearTimeout(exitTimer.current)
+      exitTimer.current = setTimeout(() => setExiting(null), 700)
+      return nextIndex
+    })
   }, [])
 
   const prev = () => {
-    setCurrent(i => (i - 1 + IMAGES.length) % IMAGES.length)
+    setCurrent(prev => {
+      const nextIndex = (prev - 1 + IMAGES.length) % IMAGES.length
+      setExiting(prev)
+      clearTimeout(exitTimer.current)
+      exitTimer.current = setTimeout(() => setExiting(null), 700)
+      return nextIndex
+    })
   }
 
   useEffect(() => {
@@ -24,6 +47,8 @@ export default function PhotoCarousel() {
     const id = setInterval(next, 4000)
     return () => clearInterval(id)
   }, [paused, next])
+
+  useEffect(() => () => clearTimeout(exitTimer.current), [])
 
   return (
     <div
@@ -34,7 +59,7 @@ export default function PhotoCarousel() {
       {IMAGES.map((src, i) => (
         <div
           key={src}
-          className={`carousel-slide ${i === current ? 'active' : ''}`}
+          className={`carousel-slide${i === current ? ' active' : ''}${i === exiting ? ' exiting' : ''}`}
         >
           <img src={src} alt={`Groomed pet ${i + 1}`} />
         </div>
@@ -52,7 +77,7 @@ export default function PhotoCarousel() {
           <button
             key={i}
             className={`carousel-dot ${i === current ? 'active' : ''}`}
-            onClick={() => setCurrent(i)}
+            onClick={() => goTo(i)}
             aria-label={`Go to slide ${i + 1}`}
           />
         ))}
