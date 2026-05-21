@@ -15,13 +15,10 @@ async function sendEmail(form) {
       template_id: EMAILJS_TEMPLATE_ID,
       user_id:     EMAILJS_PUBLIC_KEY,
       template_params: {
-        from_name:   form.name,
-        address:     form.address,
-        contact:     form.contact,
-        breed:       form.breed,
-        size:        form.size,
-        description: form.description,
-        to_email:    'wagnwheelspa@gmail.com',
+        title:   'New Appointment Request',
+        name:    form.name,
+        email:   form.contact,
+        message: `Address: ${form.address}\nPhone/Email: ${form.contact}\nBreed: ${form.breed}\nSize: ${form.size}\n\nNotes: ${form.description}`,
       },
     }),
   })
