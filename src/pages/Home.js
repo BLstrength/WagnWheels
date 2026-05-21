@@ -78,13 +78,13 @@ export default function Home() {
               <div className="step-number">2</div>
               <h3>We Come To You</h3>
               <p>
-                Our grooming van arrives at your home at the scheduled time —
+                Our grooming van arrives at your home at the scheduled time
                 fully stocked and ready to go.
               </p>
             </div>
             <div className="step">
               <div className="step-number">3</div>
-              <h3>Happy Pet, Happy You</h3>
+              <h3>Fresh and Clean Pet</h3>
               <p>
                 Your freshly groomed, happy pet is back in your arms within a
                 couple of hours.
