@@ -7,22 +7,12 @@ const EMAILJS_TEMPLATE_ID = 'WagnWheels'
 const EMAILJS_PUBLIC_KEY  = 'EKfpgTI13qg9fLcl8'
 
 async function sendEmail(form) {
-  const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      service_id:  EMAILJS_SERVICE_ID,
-      template_id: EMAILJS_TEMPLATE_ID,
-      user_id:     EMAILJS_PUBLIC_KEY,
-      template_params: {
-        title:   'New Appointment Request',
-        name:    form.name,
-        email:   form.contact,
-        message: `Address: ${form.address}\nPhone/Email: ${form.contact}\nBreed: ${form.breed}\nSize: ${form.size}\n\nNotes: ${form.description}`,
-      },
-    }),
+  await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+    title:   'New Appointment Request',
+    name:    form.name,
+    email:   form.contact,
+    message: `Address: ${form.address}\nPhone/Email: ${form.contact}\nBreed: ${form.breed}\nSize: ${form.size}\n\nNotes: ${form.description}`,
   })
-  if (!res.ok) throw new Error('EmailJS error')
 }
 
 export default function ContactForm() {
