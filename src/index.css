@@ -556,7 +556,7 @@ img { max-width: 100%; height: auto; }
 .footer {
   background: var(--black);
   padding: 80px 0 60px;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 110px;
 }
 
 .footer-container {
