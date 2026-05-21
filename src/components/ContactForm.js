@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const emptyForm = { name: '', address: '', contact: '', description: '' }
+const emptyForm = { name: '', address: '', contact: '', breed: '', size: '', description: '' }
 
 const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
@@ -18,6 +18,8 @@ async function sendEmail(form) {
         from_name:   form.name,
         address:     form.address,
         contact:     form.contact,
+        breed:       form.breed,
+        size:        form.size,
         description: form.description,
         to_email:    'wagnwheelspa@gmail.com',
       },
@@ -105,6 +107,33 @@ export default function ContactForm() {
               />
             </div>
 
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="breed">Breed</label>
+                <input
+                  id="breed"
+                  type="text"
+                  name="breed"
+                  value={form.breed}
+                  onChange={handleChange}
+                  placeholder="Your pet's breed"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="size">Size of Pet</label>
+                <input
+                  id="size"
+                  type="text"
+                  name="size"
+                  value={form.size}
+                  onChange={handleChange}
+                  placeholder="In Pounds"
+                  required
+                />
+              </div>
+            </div>
+
             <div className="form-group">
               <label htmlFor="description">Pet Description</label>
               <textarea
@@ -112,7 +141,7 @@ export default function ContactForm() {
                 name="description"
                 value={form.description}
                 onChange={handleChange}
-                placeholder="Tell us about your pet(s) — breed(s), size(s), and any special needs or requests..."
+                placeholder="Any special needs, behaviors, or requests? If you have more than one animal, add their info here too..."
                 required
                 rows={4}
               />
