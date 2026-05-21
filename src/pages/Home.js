@@ -29,21 +29,18 @@ export default function Home() {
           </p>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">🚐</div>
               <h3>We Come To You</h3>
               <p>
                 No more stressful trips to the salon. Our fully equipped grooming van pulls right up to your driveway.
               </p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">🐾</div>
               <h3>One-on-One Attention</h3>
               <p>
                 Your pet gets our undivided focus throughout the entire appointment. No more waiting in kennels with other animals.
               </p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">✂️</div>
               <h3>Professional Results</h3>
               <p>
                 Our team of experienced groomers use premium, pet-safe products to keep your dog or cat looking and feeling their best.
