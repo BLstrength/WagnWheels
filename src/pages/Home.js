@@ -7,7 +7,6 @@ export default function Home() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-content">
-          <img src="/logo.jpg" alt="Wag N Wheels" className="hero-logo" />
           <h1>Premium Mobile Pet Grooming</h1>
           <p className="hero-sub">
             Professional grooming for dogs &amp; cats — right at your door.
