@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
+import PhotoCarousel from '../components/PhotoCarousel'
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <PhotoCarousel />
 
       {/* Why Choose Us */}
       <section className="features">

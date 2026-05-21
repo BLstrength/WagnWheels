@@ -176,10 +176,10 @@ img { max-width: 100%; height: auto; }
   background: linear-gradient(135deg, #7A2810 0%, #C85A2E 45%, #E8B84B 100%);
   min-height: calc(100vh - 110px);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
-  padding: 80px 24px;
+  padding: 80px 24px 60px;
   position: relative;
   overflow: hidden;
 }
@@ -698,6 +698,96 @@ img { max-width: 100%; height: auto; }
 .site-footer-social-link:hover {
   color: var(--orange);
   background: rgba(200, 90, 46, 0.08);
+}
+
+/* ── Photo Carousel ── */
+.carousel-section {
+  padding: 90px 0;
+  background: var(--warm-bg);
+}
+
+.carousel-track {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #1a1a1a;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(200, 90, 46, 0.85);
+}
+
+.carousel-btn-prev { left: 16px; }
+.carousel-btn-next { right: 16px; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  background: var(--gold);
+  transform: scale(1.3);
 }
 
 /* ── Responsive ── */
