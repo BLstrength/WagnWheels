@@ -666,6 +666,11 @@ img { max-width: 100%; height: auto; }
   gap: 16px;
 }
 
+.site-footer-logo img {
+  height: 100px;
+  width: auto;
+}
+
 .site-footer-copy {
   font-size: 0.9rem;
   color: var(--text-muted);

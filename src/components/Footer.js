@@ -2,6 +2,9 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer-inner">
+        <a href="/" className="site-footer-logo">
+          <img src="/logo.jpg" alt="Wag N Wheels" />
+        </a>
         <p className="site-footer-copy">© {new Date().getFullYear()} Wag N Wheels. All rights reserved.</p>
         <div className="site-footer-social">
           <a
