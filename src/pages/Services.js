@@ -4,7 +4,7 @@ const addOns = [
   {
     name: 'Premium Nail Filing',
     description:
-      'Premium nail filing involves smoothing the sharp edges of your dog\'s nails into a gentle, rounded shape using a Dremel tool. This creates a more comfortable, polished finish that reduces the risk of scratches to your floors, furniture, and family while still maintaining proper nail length and health.',
+      'Premium nail filing smooths the sharp edges of your dog\'s nails into a gentle, rounded shape using a Dremel tool, creating a polished finish that reduces scratches to floors, furniture, and family while maintaining proper nail length and health.',
   },
   {
     name: 'Teeth Brushing',
