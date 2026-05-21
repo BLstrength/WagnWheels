@@ -6,7 +6,6 @@ export default function Navbar() {
       <div className="navbar-inner">
         <NavLink to="/" className="navbar-logo">
           <img src="/logo.jpg" alt="Wag N Wheels" />
-          <span className="navbar-logo-text">Wag N Wheels</span>
         </NavLink>
         <div className="navbar-links">
           <NavLink
