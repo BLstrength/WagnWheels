@@ -302,11 +302,9 @@ img { max-width: 100%; height: auto; }
 
 .step {
   text-align: center;
-  aspect-ratio: 3 / 4;
-  padding: 58% 18% 4%;
-  background: rgba(0, 0, 0, 0.22);
-  clip-path: url(#paw-clip);
-  box-sizing: border-box;
+  padding: 36px 28px;
+  background: var(--gold);
+  border-radius: 16px;
 }
 
 .step-number {
@@ -324,14 +322,14 @@ img { max-width: 100%; height: auto; }
 }
 
 .step h3 {
-  color: var(--gold);
+  color: var(--black);
   font-size: 1.2rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 .step p {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.75);
   font-size: 0.97rem;
 }
 
