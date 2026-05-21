@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Grooming, Upgraded</h1>
+          <h1>Grooming Upgraded</h1>
           <p className="hero-sub">
             Premium service without the hassle.
           </p>
