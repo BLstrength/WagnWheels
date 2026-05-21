@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 import PhotoCarousel from '../components/PhotoCarousel'
 
