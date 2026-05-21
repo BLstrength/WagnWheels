@@ -25,7 +25,7 @@ export default function About() {
                 Whether your pet gets car sick, sheds all over your vehicle, or simply feels stressed leaving home, we eliminate that burden by bringing the grooming salon to you. From small breeds like Chihuahuas to large dogs like Golden Retrievers, and even cats like Maine Coons, every pet is treated with the same level of patience, attention, and care we give our own.
               </p>
               <p>
-                At Wag N Wheels, your pet is not just another appointment—they are family.
+                At Wag N Wheels, your pet is not just another appointment, they are family.
               </p>
             </div>
 
