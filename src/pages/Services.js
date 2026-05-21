@@ -9,12 +9,12 @@ const addOns = [
   {
     name: 'Teeth Brushing',
     description:
-      'A gentle brush with pet-safe toothpaste to freshen your pet\'s breath and support long-term dental health.',
+      'A gentle brush with pet safe toothpaste to freshen your pet\'s breath and support long term dental health.',
   },
   {
     name: 'Flea Removal',
     description:
-      'Medicated bath using veterinarian-recommended flea shampoo to keep your pet and home pest-free.',
+      'Flea Removal begins with an unmedicated bath specially formulated to loosen and wash away fleas from your pet\'s coat, followed by a thorough all‑over flea comb to remove any remaining fleas and debris. This gentle, non‑chemical approach helps reduce flea populations on your pet while keeping their skin and coat comfortable.',
   },
   {
     name: 'Skunk Treatment',
