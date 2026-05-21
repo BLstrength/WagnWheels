@@ -703,7 +703,15 @@ img { max-width: 100%; height: auto; }
 /* ── Photo Carousel ── */
 .carousel-section {
   padding: 90px 0;
-  background: var(--warm-bg);
+  background: var(--orange);
+}
+
+.carousel-section .section-title {
+  color: var(--white);
+}
+
+.carousel-section .section-sub {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .carousel-track {
