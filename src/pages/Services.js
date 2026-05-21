@@ -4,7 +4,7 @@ const addOns = [
   {
     name: 'Premium Nail Filing',
     description:
-      'Trimming and filing nails to a safe, comfortable length. Keeps your pet moving happily and your floors scratch-free.',
+      'Premium nail filing involves smoothing the sharp edges of your dog\'s nails into a gentle, rounded shape using a Dremel tool. This creates a more comfortable, polished finish that reduces the risk of scratches to your floors, furniture, and family while still maintaining proper nail length and health.',
   },
   {
     name: 'Teeth Brushing',
@@ -12,7 +12,7 @@ const addOns = [
       'A gentle brush with pet-safe toothpaste to freshen your pet\'s breath and support long-term dental health.',
   },
   {
-    name: 'Flea Treatment',
+    name: 'Flea Removal',
     description:
       'Medicated bath using veterinarian-recommended flea shampoo to keep your pet and home pest-free.',
   },
