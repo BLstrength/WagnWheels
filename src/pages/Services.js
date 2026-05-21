@@ -9,7 +9,7 @@ const addOns = [
   {
     name: 'Teeth Brushing',
     description:
-      'Our Teeth Brushing add-on is a gentle brush with pet safe toothpaste to freshen your pet\'s breath and support long term dental health while helping those teeth stay shiny white!',
+      'Our Teeth Brushing is a gentle brushing of your pets teeth with pet safe toothpaste to freshen your pet\'s breath and support long term dental health while helping those teeth stay shiny white!',
   },
   {
     name: 'Flea Removal',
