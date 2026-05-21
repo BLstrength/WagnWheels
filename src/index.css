@@ -294,8 +294,8 @@ img { max-width: 100%; height: auto; }
 }
 
 .steps-grid {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: flex-start;
   position: relative;
   margin-top: 50px;
@@ -811,10 +811,112 @@ img { max-width: 100%; height: auto; }
   transform: scale(1.3);
 }
 
+/* ── Hamburger / Mobile Nav ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.nav-hamburger:hover {
+  background: rgba(200, 90, 46, 0.08);
+}
+
+.hamburger-bar {
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  background: var(--black);
+  border-radius: 2px;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+.nav-hamburger--open .hamburger-bar:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+.nav-hamburger--open .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-hamburger--open .hamburger-bar:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+.nav-mobile-menu {
+  background: var(--white);
+  border-top: 1.5px solid var(--border);
+  padding: 8px 0 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.nav-mobile-link {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--black);
+  padding: 15px 28px;
+  display: block;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-mobile-link:hover,
+.nav-mobile-link.active {
+  color: var(--orange);
+  background: rgba(200, 90, 46, 0.06);
+}
+
+.nav-mobile-link-contact {
+  margin: 10px 24px 0;
+  background: var(--orange);
+  color: var(--white) !important;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 800;
+  padding: 14px 28px;
+}
+
+.nav-mobile-link-contact:hover {
+  background: var(--orange-hover) !important;
+  color: var(--white) !important;
+}
+
 /* ── Responsive ── */
+
+/* Tablet landscape → hamburger kicks in */
+@media (max-width: 768px) {
+  .navbar-inner {
+    grid-template-columns: 1fr auto;
+    height: 80px;
+  }
+
+  .navbar-logo img {
+    height: 70px;
+  }
+
+  .navbar-center,
+  .navbar-right {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  /* hero navbar offset */
+  .hero {
+    min-height: calc(100vh - 80px);
+  }
+}
+
+/* Tablet portrait */
 @media (max-width: 900px) {
-  .features-grid,
-  .steps-grid {
+  .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -834,18 +936,45 @@ img { max-width: 100%; height: auto; }
   }
 }
 
+/* Mobile */
 @media (max-width: 640px) {
-  .hero-content h1 { font-size: 2.1rem; }
-  .hero-logo { height: 120px; }
-  .section-title { font-size: 1.8rem; }
-  .page-hero h1 { font-size: 2rem; }
+  .hero {
+    min-height: auto;
+    padding: 50px 20px 50px;
+    gap: 32px;
+  }
 
-  .navbar-logo-text { display: none; }
+  .hero-content h1 { font-size: 1.95rem; }
+  .hero-logo { height: 110px; }
+  .hero-sub { font-size: 1.05rem; margin-bottom: 28px; }
+
+  .section-title { font-size: 1.75rem; }
+
+  .page-hero { padding: 54px 20px; }
+  .page-hero h1 { font-size: 1.9rem; }
+
+  .features { padding: 64px 0; }
+  .how-it-works { padding: 64px 0; }
+  .services-section { padding: 64px 0; }
+  .about-content { padding: 64px 0; }
+  .contact-info-section { padding: 64px 0; }
 
   .features-grid,
-  .steps-grid,
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .steps-grid::before {
+    display: none;
+  }
+
+  .step {
+    padding: 0 12px;
   }
 
   .about-values {
@@ -855,4 +984,50 @@ img { max-width: 100%; height: auto; }
   .form-row {
     grid-template-columns: 1fr;
   }
+
+  .footer {
+    padding: 50px 16px 40px;
+  }
+
+  .footer-container {
+    padding: 28px 20px;
+  }
+
+  .footer-header {
+    margin-bottom: 32px;
+  }
+
+  .footer-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .site-footer-inner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .site-footer-social {
+    justify-self: center;
+  }
+
+  .site-footer-logo img {
+    height: 72px;
+  }
+
+  .carousel-track {
+    max-width: 300px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+  .hero-content h1 { font-size: 1.7rem; }
+  .section-title { font-size: 1.55rem; }
+  .page-hero h1 { font-size: 1.65rem; }
+  .footer-header h2 { font-size: 1.55rem; }
+  .carousel-track { max-width: 260px; }
+  .btn { padding: 12px 22px; font-size: 0.95rem; }
+  .hero-btns { gap: 10px; }
 }
