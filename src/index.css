@@ -138,7 +138,7 @@ img { max-width: 100%; height: auto; }
 .nav-link {
   color: var(--black);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   padding: 9px 22px;
   border-radius: 50px;
   transition: all 0.2s ease;
