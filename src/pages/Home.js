@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 import PhotoCarousel from '../components/PhotoCarousel'
 
@@ -13,7 +12,7 @@ export default function Home() {
             Premium service without the hassle.
           </p>
           <div className="hero-btns">
-            <Link to="/contact" className="btn btn-gold">Book Now</Link>
+            <a href="#contact" className="btn btn-gold">Book Now</a>
             <Link to="/services" className="btn btn-outline">Our Services</Link>
           </div>
         </div>

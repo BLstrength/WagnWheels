@@ -18,7 +18,7 @@ export default function ContactForm() {
   }
 
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <div className="footer-container">
         <div className="footer-header">
           <h2>Book Your Appointment</h2>

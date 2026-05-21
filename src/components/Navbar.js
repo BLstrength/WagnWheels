@@ -23,12 +23,9 @@ export default function Navbar() {
           </NavLink>
         </div>
         <div className="navbar-right">
-          <NavLink
-            to="/contact"
-            className={({ isActive }) => `nav-link nav-link-contact${isActive ? ' active' : ''}`}
-          >
+          <a href="#contact" className="nav-link nav-link-contact">
             Contact
-          </NavLink>
+          </a>
         </div>
       </div>
     </nav>
