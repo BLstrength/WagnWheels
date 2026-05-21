@@ -78,11 +78,12 @@ img { max-width: 100%; height: auto; }
 
 /* ── Navbar ── */
 .navbar {
-  background: var(--black);
+  background: var(--white);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+  border-bottom: 1.5px solid var(--border);
 }
 
 .navbar-inner {
@@ -107,9 +108,9 @@ img { max-width: 100%; height: auto; }
 }
 
 .navbar-logo-text {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 900;
-  color: var(--gold);
+  color: var(--orange);
   letter-spacing: 0.5px;
 }
 
@@ -119,8 +120,8 @@ img { max-width: 100%; height: auto; }
 }
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: 700;
+  color: var(--black);
+  font-weight: 800;
   font-size: 1rem;
   padding: 9px 20px;
   border-radius: 50px;
@@ -128,19 +129,19 @@ img { max-width: 100%; height: auto; }
 }
 
 .nav-link:hover {
-  color: var(--white);
-  background: rgba(255, 255, 255, 0.08);
+  color: var(--orange);
+  background: rgba(200, 90, 46, 0.08);
 }
 
 .nav-link.active {
-  color: var(--gold);
-  background: rgba(232, 184, 75, 0.14);
+  color: var(--orange);
+  background: rgba(200, 90, 46, 0.10);
 }
 
 /* ── Hero (Home) ── */
 .hero {
   background: linear-gradient(135deg, #7A2810 0%, #C85A2E 45%, #E8B84B 100%);
-  min-height: 84vh;
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: center;
