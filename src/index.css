@@ -359,9 +359,8 @@ img { max-width: 100%; height: auto; }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 50px;
 }
 
 .about-text h2 {
