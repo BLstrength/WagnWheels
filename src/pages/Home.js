@@ -51,6 +51,17 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
+      <svg style={{position:'absolute',width:0,height:0}} aria-hidden="true">
+        <defs>
+          <clipPath id="paw-clip" clipPathUnits="objectBoundingBox">
+            <ellipse cx="0.5"  cy="0.65" rx="0.44" ry="0.34"/>
+            <ellipse cx="0.16" cy="0.22" rx="0.13" ry="0.11"/>
+            <ellipse cx="0.36" cy="0.13" rx="0.12" ry="0.10"/>
+            <ellipse cx="0.64" cy="0.13" rx="0.12" ry="0.10"/>
+            <ellipse cx="0.84" cy="0.22" rx="0.13" ry="0.11"/>
+          </clipPath>
+        </defs>
+      </svg>
       <section className="how-it-works">
         <div className="container">
           <h2 className="section-title text-center">How It Works</h2>
