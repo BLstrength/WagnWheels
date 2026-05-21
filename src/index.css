@@ -899,6 +899,10 @@ img { max-width: 100%; height: auto; }
     height: 70px;
   }
 
+  .navbar-logo-text {
+    display: none;
+  }
+
   .navbar-center,
   .navbar-right {
     display: none;
