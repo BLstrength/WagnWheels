@@ -14,7 +14,7 @@ const addOns = [
   {
     name: 'Flea Removal',
     description:
-      'Flea Removal begins with an unmedicated bath specially formulated to loosen and wash away fleas from your pet\'s coat, followed by a thorough all‑over flea comb to remove any remaining fleas and debris. This gentle, non‑chemical approach helps reduce flea populations on your pet while keeping their skin and coat comfortable.',
+      'Flea Removal uses an unmedicated bath specially formulated to loosen and wash fleas from your pet\'s coat, followed by an all‑over flea comb to remove any remaining fleas and debris.',
   },
   {
     name: 'Skunk Treatment',
@@ -36,7 +36,7 @@ export default function Services() {
       <section className="services-section">
         <div className="container">
           <span className="services-note">
-            Pricing varies by pet size, breed, and coat condition — contact us for a personalized quote!
+            Pricing varies by pet size, breed, and coat condition
           </span>
 
           <div className="services-featured-row">
