@@ -6,7 +6,7 @@ export default function About() {
       <section className="page-hero">
         <div className="container">
           <h1>About Wag N Wheels</h1>
-          <p>Passionate pet lovers bringing professional grooming to your doorstep.</p>
+          <p>Your pet's personal pit crew, delivered to your door.</p>
         </div>
       </section>
 
