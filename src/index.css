@@ -451,6 +451,17 @@ img { max-width: 100%; height: auto; }
   display: block;
 }
 
+.services-featured-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.service-card--featured {
+  max-width: 420px;
+  width: 100%;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
