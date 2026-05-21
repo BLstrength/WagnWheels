@@ -8,9 +8,10 @@ const EMAILJS_PUBLIC_KEY  = 'EKfpgTI13qg9fLcI8'
 
 async function sendEmail(form) {
   await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-    name:        form.name,
+    from_name:   form.name,
     address:     form.address,
     contact:     form.contact,
+    email:       form.contact,
     breed:       form.breed,
     size:        form.size,
     description: form.description,
