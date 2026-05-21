@@ -14,12 +14,12 @@ const addOns = [
   {
     name: 'Flea Removal',
     description:
-      'Flea Removal uses an unmedicated bath specially formulated to loosen and wash fleas from your pet\'s coat, followed by an all‑over flea comb to remove any remaining fleas and debris.',
+      'Flea removal uses an unmedicated bath specially formulated to loosen and wash fleas from your pet\'s coat, followed by an all‑over flea comb to remove any remaining fleas and debris.',
   },
   {
     name: 'Skunk Treatment',
     description:
-      'Specialized de-skunking treatment to safely and effectively neutralize odor and get your pet fresh and clean again.',
+      'Our skunk treatment is a gentle, specialized de-skunking treatment to effectively remove odor and restore your pet's freshness.',
   },
 ]
 
