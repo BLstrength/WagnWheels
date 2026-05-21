@@ -36,11 +36,11 @@ export default function About() {
               </div>
               <div className="value-card">
                 <h3>Safety First</h3>
-                <p>We use only pet-safe, high-quality products that are gentle on skin and coats for all breeds.</p>
+                <p>We use only pet safe, high quality products that are gentle on skin and coats for all breeds.</p>
               </div>
               <div className="value-card">
                 <h3>Experienced Groomers</h3>
-                <p>Professionally trained and experienced with dogs and cats of all breeds and sizes.</p>
+                <p>Our groomers are professionally trained and experienced with dogs and cats of all breeds and sizes.</p>
               </div>
               <div className="value-card">
                 <h3>Your Schedule, Your Home</h3>
