@@ -406,7 +406,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .value-card h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: var(--black);
   margin-bottom: 6px;
