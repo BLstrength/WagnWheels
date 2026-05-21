@@ -93,7 +93,7 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 110px;
+  height: 165px;
 }
 
 .navbar-logo {
@@ -103,7 +103,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .navbar-logo img {
-  height: 100px;
+  height: 150px;
   width: auto;
 }
 
@@ -141,7 +141,7 @@ img { max-width: 100%; height: auto; }
 /* ── Hero (Home) ── */
 .hero {
   background: linear-gradient(135deg, #7A2810 0%, #C85A2E 45%, #E8B84B 100%);
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh - 165px);
   display: flex;
   align-items: center;
   justify-content: center;
