@@ -93,9 +93,10 @@ export default function ContactForm() {
           </form>
         )}
 
-        <div className="footer-bottom">
-          © {new Date().getFullYear()} Wag N Wheels · Mobile Pet Grooming
-        </div>
+      </div>
+
+      <div className="footer-bottom">
+        © {new Date().getFullYear()} Wag N Wheels · Mobile Pet Grooming
       </div>
     </footer>
   )
