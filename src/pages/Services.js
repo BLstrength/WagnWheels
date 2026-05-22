@@ -71,8 +71,10 @@ export default function Services() {
               <div key={i} className="service-card">
                 <h3>{service.name}</h3>
                 <p>{service.description}</p>
-                <span className="service-price-addon">{service.price}</span>
-                <span className="service-tag">Available as add-on</span>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
+                  <span className="service-price-addon">{service.price}</span>
+                  <span className="service-tag">Available as add-on</span>
+                </div>
               </div>
             ))}
           </div>
