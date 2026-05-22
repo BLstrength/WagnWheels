@@ -511,6 +511,44 @@ img { max-width: 100%; height: auto; }
   border: 1px solid rgba(232, 184, 75, 0.4);
 }
 
+.service-price-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.service-price-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(232, 184, 75, 0.12);
+  border: 1px solid rgba(232, 184, 75, 0.35);
+  border-radius: 50px;
+  padding: 4px 14px;
+}
+
+.service-price-size {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #7a5200;
+}
+
+.service-price-range {
+  font-size: 0.88rem;
+  color: #5a3e00;
+  font-weight: 600;
+}
+
+.service-price-addon {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #7a5200;
+  margin-bottom: 6px;
+}
+
 /* ── Contact Info ── */
 .contact-info-section {
   padding: 90px 0;
