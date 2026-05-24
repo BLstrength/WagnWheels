@@ -31,7 +31,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="story-image-wrap">
-                  <img src="/SaraBio.jpeg" alt="Sara, owner of Wag N Wheels" className="story-image" />
+                  <img src="/SaraBio.jpg" alt="Sara, owner of Wag N Wheels" className="story-image" />
                 </div>
               </div>
             </div>
