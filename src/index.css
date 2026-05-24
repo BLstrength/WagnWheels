@@ -1005,6 +1005,24 @@ img { max-width: 100%; height: auto; }
     gap: 40px;
   }
 
+  .story-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .story-image-wrap {
+    order: 1;
+  }
+
+  .story-paragraphs {
+    order: 0;
+  }
+
+  .story-image {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
   .contact-info-grid {
     grid-template-columns: 1fr;
     max-width: 400px;
