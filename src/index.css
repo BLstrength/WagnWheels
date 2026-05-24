@@ -395,6 +395,25 @@ img { max-width: 100%; height: auto; }
   line-height: 1.8;
 }
 
+.story-layout {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 36px;
+  align-items: start;
+}
+
+.story-image-wrap {
+  flex-shrink: 0;
+}
+
+.story-image {
+  width: 260px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  display: block;
+}
+
 .about-values {
   display: grid;
   grid-template-columns: 1fr 1fr;
