@@ -41,7 +41,7 @@ export default function Home() {
               </p>
             </div>
             <div className="feature-card">
-              <h3>Professional Results</h3>
+              <h3>Great Results</h3>
               <p>
                 Our team of experienced groomers use premium, pet-safe products to keep your dog or cat looking and feeling their best.
               </p>
