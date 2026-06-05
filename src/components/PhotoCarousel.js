@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback } from 'react'
 
 const IMAGES = [
-  '/gallery/IMG_7684.jpeg',
   '/gallery/IMG_7692.jpeg',
   '/gallery/IMG_7713.jpeg',
   '/gallery/IMG_7727.jpeg',
+  '/gallery/IMG_7684.jpeg',
 ]
 
 export default function PhotoCarousel() {
