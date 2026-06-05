@@ -41,7 +41,7 @@ export default function Services() {
       <section className="page-hero">
         <div className="container">
           <h1>Our Services</h1>
-          <p>Professional grooming packages for dogs and cats of all breeds and sizes.</p>
+          <p>Grooming packages for dogs and cats of all breeds and sizes.</p>
         </div>
       </section>
 
