@@ -28,11 +28,11 @@ const addOns = [
 ]
 
 const fullServicePrices = [
-  { size: 'S', range: '$65 – $95' },
-  { size: 'M', range: '$75 – $100' },
-  { size: 'L', range: '$80 – $110' },
-  { size: 'XL', range: '$90 – $130' },
-  { size: 'Cat', range: '$70 – $100' },
+  { size: 'S', range: '$75 – $105' },
+  { size: 'M', range: '$85 – $110' },
+  { size: 'L', range: '$90 – $120' },
+  { size: 'XL', range: '$100 – $140' },
+  { size: 'Cat', range: '$70 – $110' },
 ]
 
 export default function Services() {
