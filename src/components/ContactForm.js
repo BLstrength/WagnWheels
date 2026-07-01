@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const emptyForm = { name: '', address: '', contact: '', breed: '', size: '', description: '' }
+const emptyForm = { name: '', address: '', city: '', state: '', contact: '', breed: '', size: '', description: '' }
 
 const EMAILJS_SERVICE_ID  = 'service_je2x0if'
 const EMAILJS_TEMPLATE_ID = 'template_p6jh1gs'
@@ -10,6 +10,8 @@ async function sendEmail(form) {
   await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
     from_name:   form.name,
     address:     form.address,
+    city:        form.city,
+    state:       form.state,
     contact:     form.contact,
     email:       form.contact,
     breed:       form.breed,
@@ -79,6 +81,33 @@ export default function ContactForm() {
                   value={form.address}
                   onChange={handleChange}
                   placeholder="Your service address"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="city">City</label>
+                <input
+                  id="city"
+                  type="text"
+                  name="city"
+                  value={form.city}
+                  onChange={handleChange}
+                  placeholder="Your city"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="state">State</label>
+                <input
+                  id="state"
+                  type="text"
+                  name="state"
+                  value={form.state}
+                  onChange={handleChange}
+                  placeholder="Your state"
                   required
                 />
               </div>
