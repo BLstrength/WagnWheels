@@ -53,6 +53,10 @@ export default function ContactForm() {
           </p>
         </div>
 
+        <div className="intake-closed-banner">
+          Sorry we are currently not taking any new clients at this time. New client forms will resume Aug 1st. Thanks for your understanding!
+        </div>
+
         {status === 'sent' ? (
           <div className="form-success">
             Sent! We'll be in touch shortly to confirm your appointment.

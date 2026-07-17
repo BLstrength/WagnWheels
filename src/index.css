@@ -719,6 +719,18 @@ img { max-width: 100%; height: auto; }
   margin-top: 8px;
 }
 
+.intake-closed-banner {
+  text-align: center;
+  background: rgba(232, 184, 75, 0.15);
+  border: 2px solid var(--gold);
+  border-radius: 16px;
+  padding: 20px 28px;
+  color: var(--gold);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
 .form-success {
   text-align: center;
   background: rgba(232, 184, 75, 0.12);
