@@ -717,32 +717,6 @@ img { max-width: 100%; height: auto; }
   padding: 16px 44px;
   font-size: 1.05rem;
   margin-top: 8px;
-  position: relative;
-  overflow: hidden;
-}
-
-.form-submit::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -10%;
-  width: 120%;
-  height: 3px;
-  background: #333;
-  transform: rotate(-8deg);
-  pointer-events: none;
-}
-
-.intake-closed-banner {
-  text-align: center;
-  background: rgba(232, 184, 75, 0.15);
-  border: 2px solid var(--gold);
-  border-radius: 16px;
-  padding: 20px 28px;
-  color: var(--gold);
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin-bottom: 32px;
 }
 
 .form-success {
