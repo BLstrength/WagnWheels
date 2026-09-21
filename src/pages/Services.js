@@ -32,7 +32,6 @@ const fullServicePrices = [
   { size: 'M', range: '$85 – $110' },
   { size: 'L', range: '$90 – $120' },
   { size: 'XL', range: '$100 – $140' },
-  { size: 'Cat', range: '$70 – $110' },
 ]
 
 export default function Services() {
@@ -41,7 +40,7 @@ export default function Services() {
       <section className="page-hero">
         <div className="container">
           <h1>Our Services</h1>
-          <p>Grooming packages for dogs and cats of all breeds and sizes.</p>
+          <p>Grooming packages for dogs of all breeds and sizes.</p>
         </div>
       </section>
 
