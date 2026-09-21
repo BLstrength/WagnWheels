@@ -24,7 +24,7 @@ export default function About() {
                     My fully equipped mobile grooming van has everything needed to care for your pet, including premium shampoos, conditioners, and tools. More importantly, every appointment is conducted one-on-one in a quiet, private environment. This means no crowded salons, no waiting, and no exposure to other animals. Just focused, personalized care.
                   </p>
                   <p>
-                    Whether your pet gets car sick, sheds all over your vehicle, or simply feels stressed leaving home, I eliminate that burden by bringing the grooming salon to you. From small breeds like Chihuahuas to large dogs like Golden Retrievers, and even cats like Maine Coons, every pet is treated with the same level of patience, attention, and care I give my own.
+                    Whether your pet gets car sick, sheds all over your vehicle, or simply feels stressed leaving home, I eliminate that burden by bringing the grooming salon to you. From small breeds like Chihuahuas to large dogs like Golden Retrievers, every pet is treated with the same level of patience, attention, and care I give my own.
                   </p>
                   <p>
                     At Wag N Wheels, your pet is not just another appointment, they are family.
