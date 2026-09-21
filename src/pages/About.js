@@ -47,7 +47,7 @@ export default function About() {
               </div>
               <div className="value-card">
                 <h3>Experienced Groomers</h3>
-                <p>Our groomers are very experienced with dogs and cats of all breeds and sizes.</p>
+                <p>Our groomers are very experienced with dogs of all breeds and sizes.</p>
               </div>
               <div className="value-card">
                 <h3>Your Schedule, Your Home</h3>
