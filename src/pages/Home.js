@@ -10,7 +10,7 @@ export default function Home() {
         <div className="hero-content">
           <h1>Mobile Pet Grooming</h1>
           <p className="hero-sub">
-            From State College to Altoona and the surrounding areas.
+            Serving State College, PA and the surrounding areas.
           </p>
           <div className="hero-btns">
             <a href="#contact" className="btn btn-gold">Book Now</a>
